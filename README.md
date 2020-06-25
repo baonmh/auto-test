@@ -1,23 +1,58 @@
-### Running in Sauce Labs ###
-mvn surefire:test -Dtest=WordPressAppTest -Dsaucelabs.url=http://**sauceId**:**sauceKey**@ondemand.saucelabs.com:80/wd/hub -Dsaucelabs.access.key=**sauceKey** -Dsaucelabs.user.id=**sauceId**
+Read Assignment PDF and images of page
 
-### Running in Kobiton ###
-mvn surefire:test -Dwebdriver.driver= appium -Dtest=IFixitAppTest -Dappium.hub=https://**username**:**apiKey**@api.kobiton.com/wd/hub -Dappium.platformName=iOS -Dappium.deviceName="iPhone 6" -Dappium.deviceGroup=KOBITON -Dappium.app=https://s3-ap-southeast-1.amazonaws.com/kobiton-devvn/apps-test/demo/iFixit.ipa
+Go to link: http://demo.guru99.com/v4/
 
-### Before Run ###
+Work around to know the basic things:
+- UX
+- Field
+- Validation
+- Console Logs
+- HTML Elements
+=> Noted 
 
-1. Start appium server ( command line / appium desktop )
-2. Create simulator with necessary iOS version and mention same under __appium.platformVersion__  and __appium.deviceName__
-3. under **resources** folder, unzip **WordPress.zip** to get **WordPress.app** file needed for automation
-<br>
+Check some basic flow:
+- Happy cases
+- Basic flow from HomePage to Deposit
+- What happened to some Invalid data
+
+Do a happy case with Valid data from HomePage to Deposit
+=> Noted HTML Elements, input, output and steps (included Pop up, message, some strings to assert... etc)
+
+Setup SauceLabs
+Read SauceLabs Usage
+
+Install Android Studio and Android SDK
+
+Setup Project
+- Fork Project
+- Clone to PC
+- Read structure
+- Read Appium syntax
+- Read tutorial: http://appium.io/tutorial.html
+- Start coding
+
+Follow the happy case with steps and elements + actions
+Coding with brute-force first
+Modify code:
+-
+-
+-
+-
+-
 
 
-### How To Run From Command Line ###
 
-#### iOS Test Cases ####
-1. From command line run below from **/serenity-core/serenity-appium**, make sure to pass complete path where**WordPress.app**is located
+…or create a new repository on the command line
 
-   **mvn clean verify -Dappium.app=FULL_PATH_REQUIRED/serenity-core/serenity-appium/src/test/java/integration/resources/WordPress.app**
+echo "# auto-test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/baonmh/auto-test.git
+git push -u origin master
+Done...
 
-<br>
+
+
+
 

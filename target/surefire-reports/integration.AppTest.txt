@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: integration.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 5.041 s <<< FAILURE! - in integration.AppTest
+setUp(integration.AppTest)  Time elapsed: 4.916 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'D:\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 6HS4BISKBMPVHUIJ shell pm clear com.android.calculator2' exited with code 255'; Stderr: 'Security exception: adb clearing user data is forbidden.
+
+java.lang.SecurityException: adb clearing user data is forbidden.
+	at com.android.server.am.ActivityManagerService.clearApplicationUserData(ActivityManagerService.java:7732)
+	at com.android.server.pm.PackageManagerShellCommand.runClear(PackageManagerShellCommand.java:1616)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:199)
+	at android.os.ShellCommand.exec(ShellCommand.java:103)
+	at com.android.server.pm.PackageManagerService.onShellCommand(PackageManagerService.java:25626)
+	at android.os.Binder.shellCommand(Binder.java:634)
+	at android.os.Binder.onTransact(Binder.java:532)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3254)
+	at com.android.server.pm.PackageManagerService.onTransact(PackageManagerService.java:4940)
+	at android.os.Binder.execTransact(Binder.java:731)'; Code: '255'
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'MSI', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'D:\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 6HS4BISKBMPVHUIJ shell pm clear com.android.calculator2' exited with code 255'; Stderr: 'Security exception: adb clearing user data is forbidden.
+
+java.lang.SecurityException: adb clearing user data is forbidden.
+	at com.android.server.am.ActivityManagerService.clearApplicationUserData(ActivityManagerService.java:7732)
+	at com.android.server.pm.PackageManagerShellCommand.runClear(PackageManagerShellCommand.java:1616)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:199)
+	at android.os.ShellCommand.exec(ShellCommand.java:103)
+	at com.android.server.pm.PackageManagerService.onShellCommand(PackageManagerService.java:25626)
+	at android.os.Binder.shellCommand(Binder.java:634)
+	at android.os.Binder.onTransact(Binder.java:532)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3254)
+	at com.android.server.pm.PackageManagerService.onTransact(PackageManagerService.java:4940)
+	at android.os.Binder.execTransact(Binder.java:731)'; Code: '255'
+    at getResponseForW3CError (C:\Users\Bao\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Bao\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at integration.AppTest.setUp(AppTest.java:32)
+
