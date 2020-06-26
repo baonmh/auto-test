@@ -38,11 +38,22 @@ public class ChromeTest {
             System.out.println(e.getMessage());
         }
 
+        //Go To Guru
         TouchByXPath(driver, "//android.widget.TextView[@content-desc=\"Chrome\"]");
         TouchByID(driver, "com.android.chrome:id/url_bar");
         ClearByID(driver, "com.android.chrome:id/url_bar");
-        SendStrkeysById(driver, "com.android.chrome:id/url_bar", "http://demo.guru99.com/v4");
+        SendStrkeysById(driver, "com.android.chrome:id/url_bar", "http://demo.guru99.com");
         TouchByXPath(driver, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ListView/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView[2]");
+        //Create new account
+
+        //Login
+
+        //Verify Create New Customer
+
+        //Verify Create New Account
+
+        //Verify Deposit
+
 
         driver.quit();
     }
