@@ -53,6 +53,11 @@ git push -u origin master
 Done...
 
 
++ Path issue
++ Element only XPath
++ Slow 
++ Cannot handle DatePicker
+
 
 
 
