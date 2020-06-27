@@ -29,10 +29,10 @@ public class ChromeTest {
         caps.setCapability("udid", "emulator-5554"); //Give Device ID of your mobile phone
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "8.1");
-//        caps.setCapability("simpleIsVisibleCheck", "true");
+        caps.setCapability("simpleIsVisibleCheck", "true");
 //        caps.setCapability("useJSONSource", "true");
-      caps.setCapability("fullReset", false);
-      caps.setCapability("noReset", true);
+//      caps.setCapability("fullReset", false);
+//      caps.setCapability("noReset", true);
         //Set ChromeDriver location
         System.setProperty("webdriver.chrome.driver","D:/chromedriver.exe");
 
@@ -74,94 +74,94 @@ public class ChromeTest {
         MobileElement el0203 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[25]/android.view.View/android.view.View[3]/android.view.View[2]/android.widget.Button[1]");
         el0203.click();
         //FillCustomer
-//        Thread.sleep(3000);
-//        MobileElement el0301 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.widget.ListView/android.view.View[2]/android.view.View");
-//        el0301.click();
-//        Thread.sleep(1000);
-//        MobileElement el0302 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[11]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.EditText");
-//        el0302.click();
-//        Thread.sleep(1000);
-//        el0302.sendKeys("Baro New Customer");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(5000);
-//
-//        MobileElement el0310 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[10]/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]");
-//        el0310.click();
-//        Thread.sleep(1000);
-//        MobileElement el0311 = (MobileElement) driver.findElementByAccessibilityId("26 June 2020");
-//        el0311.click();
-//        Thread.sleep(1000);
-//        MobileElement el0312 = (MobileElement) driver.findElementById("android:id/button1");
-//        el0312.click();
-//        Thread.sleep(3000);
-//
-//        MobileElement el0303 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[10]/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText");
-//        el0303.click();
-//        Thread.sleep(1000);
-//        el0303.sendKeys("1100 Truong Sa");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(5000);
-//
-//        MobileElement el0304 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[9]/android.view.View/android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.widget.EditText");
-//        el0304.click();
-//        Thread.sleep(1000);
-//        el0304.sendKeys("Ho Chi Minh");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0305 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.widget.EditText");
-//        el0305.click();
-//        Thread.sleep(1000);
-//        el0305.sendKeys("Ho Chi Minh");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0306 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.widget.EditText");
-//        el0306.click();
-//        Thread.sleep(1000);
-//        el0306.sendKeys("112233");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0307 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText");
-//        el0307.click();
-//        Thread.sleep(1000);
-//        el0307.sendKeys("0777528528");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0308 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.widget.EditText");
-//        el0308.click();
-//        Thread.sleep(1000);
-//        el0308.sendKeys("barotest1@gmail.com");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0309 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[7]/android.view.View[2]/android.widget.EditText");
-//        el0309.click();
-//        Thread.sleep(1000);
-//        el0309.sendKeys("123456789");
-//        Thread.sleep(1000);
-//        driver.navigate().back();
-//        Thread.sleep(2000);
-//
-//        MobileElement el0313 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View[2]/android.widget.Button[1]");
-//        el0313.click();
-//        ///
-//        Thread.sleep(3000);
-//        //Verify Customer
-//        String customerID;
-//        MobileElement el0314 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[11]/android.view.View/android.view.View/android.widget.GridView/android.view.View[4]/android.view.View[2]");
-//        customerID = el0314.getText();
-//        Assert.assertNotNull(customerID);
-//        System.out.println("Verified Create Customer Flow! CustomerID: " + customerID);
+        Thread.sleep(3000);
+        MobileElement el0301 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.widget.ListView/android.view.View[2]/android.view.View");
+        el0301.click();
+        Thread.sleep(1000);
+        MobileElement el0302 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[11]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.EditText");
+        el0302.click();
+        Thread.sleep(1000);
+        el0302.sendKeys("Baro New Customer");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(5000);
+
+        MobileElement el0310 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[10]/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]");
+        el0310.click();
+        Thread.sleep(1000);
+        MobileElement el0311 = (MobileElement) driver.findElementByAccessibilityId("26 June 2020");
+        el0311.click();
+        Thread.sleep(1000);
+        MobileElement el0312 = (MobileElement) driver.findElementById("android:id/button1");
+        el0312.click();
+        Thread.sleep(3000);
+
+        MobileElement el0303 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[10]/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText");
+        el0303.click();
+        Thread.sleep(1000);
+        el0303.sendKeys("1100 Truong Sa");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(30000);
+
+        MobileElement el0304 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.widget.EditText");
+        el0304.click();
+        Thread.sleep(1000);
+        el0304.sendKeys("Ho Chi Minh");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(5000);
+
+        MobileElement el0305 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.widget.EditText");
+        el0305.click();
+        Thread.sleep(1000);
+        el0305.sendKeys("Ho Chi Minh");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        MobileElement el0306 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.widget.EditText");
+        el0306.click();
+        Thread.sleep(1000);
+        el0306.sendKeys("112233");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        MobileElement el0307 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View[2]/android.widget.EditText");
+        el0307.click();
+        Thread.sleep(1000);
+        el0307.sendKeys("0777528528");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        MobileElement el0308 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.widget.EditText");
+        el0308.click();
+        Thread.sleep(1000);
+        el0308.sendKeys("barotest3@gmail.com");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        MobileElement el0309 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[7]/android.view.View/android.view.View/android.view.View/android.view.View[7]/android.view.View[2]/android.widget.EditText");
+        el0309.click();
+        Thread.sleep(1000);
+        el0309.sendKeys("123456789");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        MobileElement el0313 = (MobileElement) driver.findElementByXPath("");
+        el0313.click();
+        ///
+        Thread.sleep(3000);
+        //Verify Customer
+        String customerID;
+        MobileElement el0314 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[11]/android.view.View/android.view.View/android.widget.GridView/android.view.View[4]/android.view.View[2]");
+        customerID = el0314.getText();
+        Assert.assertNotNull(customerID);
+        System.out.println("Verified Create Customer Flow! CustomerID: " + customerID);
 
         // Fill Account
 
@@ -173,7 +173,7 @@ public class ChromeTest {
         MobileElement el0401 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[11]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.EditText");
         el0401.click();
         Thread.sleep(1000);
-        el0401.sendKeys("63097");
+        el0401.sendKeys(customerID);
         Thread.sleep(1000);
         driver.navigate().back();
         Thread.sleep(2000);
@@ -228,11 +228,11 @@ public class ChromeTest {
         el0504.sendKeys("Just Deposit");
         Thread.sleep(1000);
         driver.navigate().back();
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         MobileElement el0505 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[8]/android.view.View/android.view.View/android.view.View[1]/android.view.View[4]/android.view.View[1]");
         el0505.click();
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         MobileElement el0506 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[8]/android.view.View/android.view.View/android.view.View[1]/android.view.View[5]/android.view.View[2]/android.widget.Button[1]");
         el0506.click();
