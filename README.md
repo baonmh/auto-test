@@ -25,7 +25,7 @@ Read tutorial and document of Appium page: `http://appium.io/tutorial.html`
 Search simple example from Medium, Viblo and Youtube
 
 ### Common Troubleshooting
-Fix some common issues of Windows env and with installed tools above
+Fix some common issues of Windows env and installed tools above
 + PATH issue => Config system env PATH
 + Java old version issue => update
 + Android SDK need high version to run => update
@@ -70,7 +70,7 @@ Issue slow loading for XPath, may stops the process, especially when there is sc
 => Cannot get the Unique locators from development team
 => Try to increase waiting time
 ```
-### Improvement and Otimization:
+### Improvements and Otimizations:
 + Improve process time with wait and waitTillVisible
 + Create functions for Click and Sendkeys, with input are: (driver + element + waiting time)
 + Wrap functions to another java file, put them in another Folder
