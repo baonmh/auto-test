@@ -33,15 +33,15 @@ Fix some common issues of Windows env and installed tools above
             ```=> Allow USB debugging and stop clear user data```
             
 + Try to use setCapability Browser but not work 
-            `````=> Chrome not reachable
+            ```=> Chrome not reachable
             => No Chromedriver found that can automate Chrome '83.0.4103' 
                 => downloaded and config binary path for Chrome 83.0.4103 + install chrome 83.0.4103 for Emulator
-                => Not work`````
+                => Not work```
 + Run on new devices issue: clearing user data is forbidden => skip => Run on Emulator
             ```=> It seems Chrome try to clear data, setCapability is meanless
-            => Seems there are 2 configs for USB Debugging (for some devices) but my OPPO has only 1
+            => Seems there are 2 configs for USB Debugging (for some devices) but my OPPO has only 1```
 
-Install Android Studio + Set up and run Emulator```
+Install Android Studio + Set up and run Emulator
 + PATH issue for Android tools / platform tools
 
 ### Start Coding
